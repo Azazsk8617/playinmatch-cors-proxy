@@ -18,7 +18,8 @@ app.post('/register', async (req, res) => {
 
     const response = await axios.post('https://playinmatch.com/api2/v2/register', form, {
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-CSRF-TOKEN': 'PreE41uxjeUi8WPQmxsmomA6wcsW4AetqipuOZwh' // ✅ এটা hardcoded করে দিচ্ছি
       }
     });
 
